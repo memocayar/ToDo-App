@@ -1,13 +1,13 @@
-package com.todoapp.TodoApp.entity;
+package com.todoapp.TodoApp.persistence.entity;
 
-import com.todoapp.TodoApp.enums.Rol;
+import com.todoapp.TodoApp.persistence.enums.Rol;
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
 @Data
-public class UserAbstractEntity {
+public class UserAbstract {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +21,5 @@ public class UserAbstractEntity {
     private Rol rol;
 
     @OneToOne
-    private ImageEntity image;
+    private Image image;
 }

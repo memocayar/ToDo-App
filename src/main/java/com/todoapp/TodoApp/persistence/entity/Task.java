@@ -1,11 +1,16 @@
-package com.todoapp.TodoApp.entity;
+package com.todoapp.TodoApp.persistence.entity;
+
+import lombok.Data;
 
 import javax.persistence.*;
 
-public class TaskEntity {
+@Entity
+@Data
+@Table(name = "task")
+public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Integer id;
 
     private boolean status;
 
@@ -14,5 +19,5 @@ public class TaskEntity {
     private String description;
 
     @OneToOne(fetch = FetchType.LAZY)
-    private UserEntity User;
+    private User user;
 }

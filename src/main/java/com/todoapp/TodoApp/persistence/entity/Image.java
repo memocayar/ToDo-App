@@ -1,4 +1,4 @@
-package com.todoapp.TodoApp.entity;
+package com.todoapp.TodoApp.persistence.entity;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Data
-public class ImageEntity {
+public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
