@@ -1,6 +1,6 @@
-package com.todoapp.TodoApp.persistence.crud;
+package com.todoapp.TodoApp.repository;
 
-import com.todoapp.TodoApp.persistence.entity.Image;
+import com.todoapp.TodoApp.entity.Image;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

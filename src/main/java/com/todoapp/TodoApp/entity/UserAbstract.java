@@ -1,6 +1,6 @@
-package com.todoapp.TodoApp.persistence.entity;
+package com.todoapp.TodoApp.entity;
 
-import com.todoapp.TodoApp.persistence.enums.Rol;
+import com.todoapp.TodoApp.enums.Rol;
 import lombok.Data;
 
 import javax.persistence.*;

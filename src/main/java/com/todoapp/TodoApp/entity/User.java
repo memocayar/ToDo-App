@@ -1,4 +1,4 @@
-package com.todoapp.TodoApp.persistence.entity;
+package com.todoapp.TodoApp.entity;
 
 import lombok.Data;
 
