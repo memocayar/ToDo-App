@@ -9,8 +9,6 @@ import java.util.List;
 @Data
 @Table(name = "user")
 public class User extends UserAbstract{
-
     @OneToMany(cascade = CascadeType.REMOVE, orphanRemoval = true, mappedBy = "user")
     private List<Task> tasks;
-
 }

@@ -15,14 +15,19 @@ public class UserController {
     @Autowired
     UserServiceImp userService;
 
-    @GetMapping()
+    @GetMapping("/users")
     public List<UserResponse> getAllUsers(){
         return userService.getAllUsers();
     }
 
-    @PostMapping()
+    @PostMapping("/user")
     public User saveUser(@RequestBody UserRequest user){
         return this.userService.saveUser(user);
+    }
+
+    @PostMapping()
+    public User findByName(@PathVariable("name") String name) {
+        return userService.findByName(name);
     }
 
 }
