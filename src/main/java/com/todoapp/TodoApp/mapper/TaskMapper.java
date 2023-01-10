@@ -41,7 +41,6 @@ public interface TaskMapper {
         for(Task task : tasks){
             listResponse.add(map(task));
         }
-
         return listResponse;
     }
 }

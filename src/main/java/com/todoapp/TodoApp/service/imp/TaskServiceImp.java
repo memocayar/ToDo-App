@@ -20,11 +20,9 @@ public class TaskServiceImp implements TaskService {
 
     @Override
     public TaskResponse createTask(TaskRequest request) {
-        Task task = new Task();
-        task.setStatus(false);
-        task.setTitle(request.getTitle());
-        task.setDescription(request.getDescription());
-        // TODO: user ?? no me gusta cambiar a maper
+        Task task = taskMapper.map(request);
+        taskRepository.save(task);
+
         return taskMapper.map(task);
     }
 
