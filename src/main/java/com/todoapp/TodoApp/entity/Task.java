@@ -21,3 +21,5 @@ public class Task {
     @OneToOne(fetch = FetchType.LAZY)
     private User user;
 }
+
+
